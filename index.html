@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mừng ngày Phụ nữ Việt Nam💖</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- MUSIC TOGGLE -->
+        <div id="musicToggle" class="music-btn">🔊</div>
+
+        <audio id="bgMusic" src="./assets/user_bg_music.mp3" loop></audio>
+        <canvas id="bg"></canvas>
+        <canvas id="hearts"></canvas>
+        <!-- CARD THƯ -->
+        <div class="card" id="letterCard">
+            <h2>Mừng ngày Phụ nữ Việt Nam💖</h2>
+            <span class="corner-heart left"></span>
+            <span class="corner-heart right"></span>
+            <!-- chữ gõ trực tiếp trên card -->
+            <p id="typing" class="content"></p>
+
+            <div class="heart-btn">
+                <span class="center-heart"></span>
+            </div>
+        </div>
+
+        <!-- SLIDE ẢNH -->
+        <div class="card hidden" id="slideCard">
+            <h2>Mừng ngày Phụ nữ Việt Nam💖</h2>
+
+            <div class="photo">
+                <img id="slideImg" src="images/a1.jpg" />
+            </div>
+            <div class="controls">
+                <button onclick="prev()">❮</button>
+                <button>❤️</button>
+                <button onclick="next()">❯</button>
+            </div>
+        </div>
+
+        <script>
+            window.CONFIG = {
+                message: `Nhân ngày 20/10, anh không chỉ muốn chúc em luôn xinh đẹp, vui vẻ và hạnh phúc. Anh muốn nói với em một điều từ tận lòng mình: cảm ơn em vì đã bước vào cuộc đời anh.
+
+Có thể anh không phải là người hoàn hảo, cũng sẽ có những lúc vô tâm, nóng giận hay chưa đủ tinh tế để hiểu hết những điều em nghĩ. Nhưng tình cảm anh dành cho em là thật. Anh trân trọng từng khoảnh khắc chúng ta có nhau, từ những điều nhỏ bé nhất cho đến những ngày vui buồn cùng nhau.
+
+Anh không biết tương lai sẽ có những điều gì xảy ra, nhưng nếu em vẫn còn muốn nắm tay anh, anh muốn mình cùng nhau cố gắng. Anh muốn sau này khi nhìn lại, cả hai có thể mỉm cười vì đã không bỏ lỡ nhau.
+
+Chúc em bé anh yêu một ngày 20/10 thật hạnh phúc. Mong rằng em luôn được yêu thương, được trân trọng và luôn có một người sẵn lòng ở bên em khi em cần.
+
+Và anh mong người đó, trong những năm tháng sau này, vẫn là anh. ❤️`,
+                speed: "55",
+                images: '["./assets/user_images_0.jpg"]'
+            };
+        </script>
+        <script src="script.js"></script>
+    	<!-- Cơ chế bảo mật (Chống soi code) -->
+	<script src="./anti-devtools.js"></script>
+</body>
+</html>
